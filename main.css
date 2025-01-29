@@ -10,6 +10,16 @@ nav{
     
    
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; /* Evita desplazamiento horizontal si hay desbordamiento */
+}
 .logo{
    
     width: 180px; /* Ajusta el ancho de la imagen */
@@ -21,6 +31,8 @@ nav{
 }
 
 .contenedor{
+    width: 100%;
+    overflow-x: hidden; 
   background-color: #DBDAD3;
    background-attachment: fixed; 
     color: white; /* Texto en blanco para mejor visibilidad */
@@ -30,7 +42,6 @@ nav{
     gap: 80px; /* Espaciado entre botones */
     justify-content: center;
     align-items: center; /* Centrar verticalmente */
-    max-width: 1000px;
     padding: 100px 250px;
     min-height: 100vh; /* Altura mínima para llenar la pantalla */
     position: relative; /* Necesario para usar pseudo-elementos */
@@ -105,7 +116,7 @@ h2{
     font-size: 36px; /* Tamaño del texto */
     font-weight: bold; /* Negrita */
     color: #333; /* Color del texto */
-    
+    margin-bottom: 20px;
 }
 footer {
     Background-color: #6f6835; /* Fondo /* Fondo oscuro */
@@ -113,6 +124,7 @@ footer {
     text-align: center;
     padding: 20px 10px;
     font-size: 16px;
+    
 }
 
 footer a {
@@ -140,7 +152,7 @@ footer a:hover {
     gap: 80px;
     width: 150px; /* Ancho de la imagen */
     height: 70px; /* Mantén la proporción de la imagen */
-
+    margin-bottom: 20px;
 }
 /* Media Queries */
 
@@ -185,4 +197,7 @@ footer a:hover {
         width: 80%;
         height: 90px;
     }
+}
+.letra{
+    font-size: 18PX;
 }
