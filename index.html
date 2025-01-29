@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.jpg" alt=".">
+   <H1 class="lema">Realizamos trabajos agrícolas   adaptados al gusto del cliente,  ofreciendo servicios por 
+            hora o por hectárea según sus necesidades </H1>
+    </nav>
+
+    <div id="servicios" class="contenedor">
+        <!-- <H2>OFRESEMOS LOS SERVICIOS :</H2> -->
+        <button onclick="mostrarCalculadora(250)">
+            <img class="img" src="ROMPLOW.jpg" alt="1"><span>  ROMPLOW </span> <SPAn class="texto-secundario">250BS X h</SPAn>
+        </button>
+        <button onclick="mostrarCalculadora(150)">
+             <img class="img"src="ARADO.jpg" alt="2"><span>  ARADO </span> <SPAn class="texto-secundario">140BS X h</SPAn>
+            </button>
+        <button onclick="mostrarCalculadora(160)">
+            <img class="img"src="FUNIGADORA.jpg" alt="3"><span>  FUNIGADORA </span> <SPAn class="texto-secundario">160BS X h</SPAn>
+        </button>
+        <button onclick="mostrarCalculadora(160)">
+            <img class="img"src="RASTRA.jpg" alt="4"><span> RASTRA </span> <SPAn class="texto-secundario">140BS X h</SPAn>
+        </button>
+        <button onclick="mostrarCalculadora(80)">
+            <img class="img"src="BOLEADORA.jpg" alt="3"><span>  BOLEADORA </span> <SPAn class="texto-secundario">80BS X TOLVA</SPAn>
+        </button>
+        <button onclick="mostrarCalculadora(160)">
+            <img class="img"src="rastrah.jpg" alt="4"><span> RASTRA HIDRAULICA </span> <SPAn class="texto-secundario">160BS X h</SPAn>
+        </button>
+        
+    </div>
+    <div id="calculadora" style="display: none;">
+        
+        <h2>Calculadora</h2>
+        <input type="hidden" id="precio">
+        <label for="horas">Horas trabajadas:</label>
+        <input type="number" id="horas" min="0" value="0">
+
+        <label for="minutos">Minutos trabajados:</label>
+        <input type="number" id="minutos" min="0" max="59" value="0">
+
+        <button class="calculadorab" onclick="calcularTotal()">Calcular</button>
+        <h2>Total: <span id="total">0</span> BS</h2>
+
+        <button  class="calculadorab" onclick="volverServicios()">Volver a servicios</button>
+    </div>
+    <footer>
+        <p>Contáctanos: <a href="https://wa.link/qpvjqd">74439888</a></p>
+        <p><a href="https://maps.app.goo.gl/VGa9uFSDsF6fJpS87">Estamos ubicados en: Calle Ficticia #123, Ciudad Ejemplo </a></p>
+        <p>&copy; 2025 JK. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+nav{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #C3BB8A; /* Fondo de la barra de navegación */
+    width: 100%; 
+   
+    
+    
+   
+}
+.logo{
+   
+    width: 180px; /* Ajusta el ancho de la imagen */
+    height: 180px;
+}
+.lema{
+    color: white; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+}
+
+.contenedor{
+  background-color: #DBDAD3;
+   background-attachment: fixed; 
+    color: white; /* Texto en blanco para mejor visibilidad */
+   
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones salten a la siguiente fila */
+    gap: 80px; /* Espaciado entre botones */
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+    max-width: 1000px;
+    padding: 100px 250px;
+    min-height: 100vh; /* Altura mínima para llenar la pantalla */
+    position: relative; /* Necesario para usar pseudo-elementos */
+    color: white; /* Texto en blanco */
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+/* .contenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('f.jpg'); /* Imagen de fondo */
+    /* background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    /* background-position: center; /* Centra la imagen */
+    /* z-index: -2; /* Envía la imagen detrás del contenido */
+    /* filter: brightness(100%); /* Reduce la intensidad de la imagen */
+/* } */ 
+
+
+button {
+    display: flex; /* Habilita flexbox */
+    
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    width: 400px; /* Ancho del botón */
+    height: 300px; /* Altura del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    background-color: #f9f9f9; /* Color de fondo inicial */
+    border: 2px solid #ccc; /* Borde del botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+button img {
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+button span {
+    font-size: 18px; /* Tamaño del texto principal */
+    font-weight: bold; /* Negrita para el texto principal */
+}
+
+button .texto-secundario {
+    font-size: 14px; /* Tamaño del texto secundario */
+    color: #555; /* Color del texto secundario */
+}
+button:hover {
+    background-color: #d3d3d3; /* Color gris suave al pasar el mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+h1 {
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrado */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    
+}
+h2{
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    
+}
+footer {
+    Background-color: #6f6835; /* Fondo /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #FFD700; /* Color del enlace (dorado) */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+#servicios {
+    visibility: visible;
+}
+
+#servicios.hidden, #calculadora.hidden {
+    display: none; /* Oculta completamente el elemento */
+}
+
+#calculadora {
+    display: none;
+    margin: 0 auto;
+    padding: 1em;
+}
+.calculadorab{
+    gap: 80px;
+    width: 150px; /* Ancho de la imagen */
+    height: 70px; /* Mantén la proporción de la imagen */
+
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .lema {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .contenedor {
+        padding: 50px 10px;
+        gap: 40px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lema {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenedor {
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    button {
+        width: 100%;
+        height: 180px;
+    }
+    button img{
+        width: 80%;
+        height: 90px;
+    }
+}
